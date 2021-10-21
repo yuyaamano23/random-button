@@ -9,7 +9,11 @@ export default function App() {
 		<>
 			<StatusBar style="auto" />
 			<SafeAreaView style={{ flex: 1 }}>
-				<WebView source={{ uri: "https://zenn.dev" }} />
+				<WebView
+					source={{
+						uri: "https://yuyaamano23.github.io/random-button-webview",
+					}}
+				/>
 			</SafeAreaView>
 		</>
 	);
