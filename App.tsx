@@ -1,14 +1,17 @@
 import { StatusBar } from "expo-status-bar";
 import React from "react";
-import { StyleSheet, Text, View } from "react-native";
+import { StyleSheet, Text, View, SafeAreaView } from "react-native";
+import { WebView } from "react-native-webview";
 
 export default function App() {
 	console.log("うんこいっぱいでたねおめでとう");
 	return (
-		<View style={styles.container}>
-			<Text>Open up App.tsx to start working on your app!</Text>
-			<StatusBar style="auto" hidden />
-		</View>
+		<>
+			<StatusBar style="auto" />
+			<SafeAreaView style={{ flex: 1 }}>
+				<WebView source={{ uri: "https://zenn.dev" }} />
+			</SafeAreaView>
+		</>
 	);
 }
 
